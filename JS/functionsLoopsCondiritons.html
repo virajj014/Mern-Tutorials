@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My website works</h1>
+</body>
+<script>
+    // let age =17;
+
+    // if(age == 18){
+    //     console.log("You are 18");
+    // }
+    // else if (age > 18){
+    //     console.log("You are above 18");
+    // }
+    // else{
+    //     console.log("You are below 18");
+    // }
+
+
+    // let day = "Tuesday";
+
+    // switch (day){
+    //     case "Monday":
+    //         console.log("Today is Moday");
+    //         break;
+    //     case "Tuesday":
+    //         console.log("Today is Tuesday");
+    //         break;
+
+    //     case "Wednesday":
+    //         console.log("Today is Wednesday");
+    //         break;
+
+    //     default:
+    //         console.log("Today is not a day");
+    // }
+
+
+
+
+
+
+    // LOOPS
+
+
+    // for(let i =10; i< 10; i++){
+    //     console.log(i);
+    // }
+
+
+    // let i =10;
+
+    // while(i < 10){
+    //     console.log(i);
+    //     i++;
+    // }
+
+    // let i =12;
+
+    // do{
+    //     console.log(i);
+    //     i++;
+    // }
+    // while(i < 10);
+
+
+
+    // const person = {
+    //     name: "John",
+    //     age : 30,
+    //     city : "New York"
+    // }
+
+    // for (let key in person){
+    //     console.log(key , person[key]);
+    // }
+
+    const numbers = [1, 2, 3, 4, 5];
+
+    // for (number of numbers) {
+    //     console.log(number);
+    // }
+
+    // for(let i =0 ; i< numbers.length; i++){
+    //     console.log(numbers[i]);
+    // }
+
+    // numbers.forEach(function (number) {
+    //     console.log(number);
+    // })
+
+
+
+
+
+
+    // FUNCTIONS
+
+    // function greet(name){
+    //     console.log(`Your name is ${name}`);
+    // }
+    // greet("Harshal");
+
+    // function add(a, b) {
+    //     return a + b;
+    // }
+    // let result = add(10, 20);
+    // console.log(result);
+
+    // const add = (a=50, b) => {
+    //     let c = a + b;
+    //     return c;
+    // }
+
+    // let result = add(undefined, 20);
+    // console.log(result);
+
+
+
+    // function sumNumber(...numbers){
+    //     let sum = 0;
+    //     for(let number of numbers){
+    //         sum += number;
+    //     }
+    //     return sum;
+    // }
+
+    // let result = sumNumber(1,2,3,4,5,6,7,8,9,10);
+    // console.log(result);
+
+
+
+
+    // FACTORIAL of 5 = 5*4*3*2*1
+    // FACTORIAL of 4 = 4*3*2*1
+
+    function factorial(n){
+        if(n == 0 || n == 1){
+            return 1;
+        }
+        return n * factorial(n-1);
+    }
+
+    let result = factorial(4);
+    console.log(result);
+</script>
+
+</html>

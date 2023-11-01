@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>User Profile</h1>
+
+    <img src="" alt="" id="profileImg">
+    <p>
+        Name : <span id="name"></span>
+    </p>
+    <p>
+        Age : <span id="age"></span>
+    </p>
+
+    <p>
+        Email : <span id="email"></span>
+    </p>
+
+    <p>
+        Phone : <span id="phone"></span>
+    </p> -->
+
+
+    <h1>WEATHER APP</h1>
+
+
+</body>
+<script>
+    // let dataFromBackend = {
+    //     name: "Harshal Jain",
+    //     age: 21,
+    //     email: "virajj014@gmail.com",
+    //     profile: "https://avatars.githubusercontent.com/u/76771864?v=4",
+    //     hobbies: ["coding", "reading", "gaming"],
+    //     family: [
+    //         {
+    //             name: "user1",
+    //             age: 21,
+    //         },
+    //         {
+    //             name: "user2",
+    //             age: 22
+    //         }
+    //     ],
+    //     phone: 1234567890
+    // }
+    // let stringData = JSON.stringify(dataFromBackend);
+    // let parsedData = JSON.parse(stringData);
+    // // console.log(parsedData.family[0].name);
+    // // console.log(parsedData.hobbies[0])
+
+
+    // let name = document.getElementById("name");
+    // let age = document.getElementById("age");
+    // let email = document.getElementById("email");
+    // let phone = document.getElementById("phone");
+    // let profileImg = document.getElementById("profileImg");
+
+
+    // name.innerText = parsedData.name;
+    // age.innerText = parsedData.age;
+    // email.innerText = parsedData.email;
+    // phone.innerText = parsedData.phone;
+    // profileImg.src = parsedData.profile;
+
+
+
+    //a5905030ca9c50c3a516d13d5fd3bd59
+
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=a5905030ca9c50c3a516d13d5fd3bd59")
+    .then((res)=>{
+        return res.json();
+    })
+    .then((data)=>{
+        console.log(data.name);
+    })
+</script>
+
+</html>

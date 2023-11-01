@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myHeading">Hello, World!</h1>
+    <p id="myParagraph">This is a paragraph.</p>
+    <button id="myButton">Click me</button>
+</body>
+<script>
+    var heading = document.getElementById("myHeading");
+    var paragraph = document.getElementById("myParagraph");
+    var button = document.getElementById("myButton");
+    // heading.innerHTML = "HEY THERE"
+    // paragraph.innerHTML = "This is a new paragraph"
+    // // console.log(heading.innerHTML);
+
+
+    function myfunc(){
+        heading.innerHTML = "HEY THERE"
+        heading.style.color = "red"
+        paragraph.innerHTML = "This is a new paragraph"
+    }
+    button.addEventListener("click",myfunc)
+</script>
+
+</html>
