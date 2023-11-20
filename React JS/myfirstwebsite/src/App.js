@@ -6,6 +6,11 @@ import { useEffect, useState } from 'react';
 // import UseStateEx from './components/UseStateEx/UseStateEx';
 import UseEffectEx from './components/UseEffectEx/UseEffectEx';
 import UseMemoEx from './components/UseMemoEx/UseMemoEx';
+import UseRefEx from './components/UseRefEx/UseRefEx';
+import UseReducerEx from './components/UseReducerEx/UseReducerEx';
+import UseCallbackEx from './components/UseCallbackEx/UseCallbackEx';
+import MyComp1 from './components/TestComp/MyComp1';
+import MyComp2 from './components/TestComp/MyComp2';
 
 function App() {
   //  const [counter, setCounter] = useState(0);
@@ -27,10 +32,15 @@ function App() {
   // })
 
 
-  let name = 'Harshal Jain'
+  // let name = 'Harshal Jain'
   return (
     <div className="App">
-      <UseMemoEx />
+      <MyComp1 />
+      <MyComp2 />
+      {/* <UseCallbackEx /> */}
+      {/* <UseReducerEx /> */}
+      {/* <UseRefEx /> */}
+      {/* <UseMemoEx /> */}
       {/* <UseEffectEx /> */}
       {/* <UseStateEx /> */}
       {/* <Navbar data={name}/>
