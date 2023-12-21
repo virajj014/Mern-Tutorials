@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+}
+
+.nav li{
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.nav .active{
+    background-color: yellow;
+}
+
+.nav li a{
+    color: white;
+    text-decoration: none;
+}

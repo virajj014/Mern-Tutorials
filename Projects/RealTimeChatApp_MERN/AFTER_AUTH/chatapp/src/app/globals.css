@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary:#F1EAFF;
+    --secondary: #E5D4FF;
+    --tertiary: #DCBFFF;
+    --quaternary: #a032ff;
+    --online: #00b500;
+    --offline: #FF0000;
+}
+
+.fullpage{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: #a032ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

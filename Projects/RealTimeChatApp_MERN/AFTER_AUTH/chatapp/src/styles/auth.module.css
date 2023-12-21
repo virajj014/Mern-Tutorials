@@ -1,0 +1,72 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    background-color: white;
+}
+
+.formOuter{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+ background: var(--quaternary);
+}
+
+.formContainer h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--quaternary);
+    text-align: center;
+}
+
+
+.formContainer button{
+    background-color: var(--tertiary);
+}
+.formContainer button:hover{
+    background-color: var(--quaternary);
+}
+
+.formContainer .t1{
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--quaternary);
+}
+
+.formContainer .t2{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(black);
+}
+
+.formContainer a{
+    color: var(--quaternary);
+    text-decoration: none;
+}
+
+.formContainer .pickImageContaner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+
+}
+
+
+
+.inputrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+}
