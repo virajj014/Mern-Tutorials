@@ -49,6 +49,63 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(PORT, () => {
-    console.log('Server started!');
+const server = app.listen(
+    PORT,
+    console.log(`Server running on PORT ${PORT}...`)
+);
+
+const io = require('socket.io')(server, {
+    pingTimeout: 60000,
+    cors: {
+        origin: 'http://localhost:3000'
+    }
 });
+
+io.on("connection", (socket) => {
+    console.log("a user connected ", socket.id);
+
+
+    socket.on('joinownuserid', (userId) => {
+        socket.join(userId);
+        console.log('user joined own room ', userId);
+    })
+
+    socket.on("messageSend", (messageObj) => {
+        console.log("messageSend");
+        let roomId = messageObj.chat._id;
+        messageObj.chat.users.forEach(element => {
+            console.log("message users ", element);
+            socket.to(element._id).emit('refetchcontacts')
+        })
+
+
+        socket.to(roomId).emit("messageReceived", messageObj);
+
+
+        // GROUP "hey", "suno bhai" -> u1 , u2 , u3
+        // u1 -> fetchcontacts
+    })
+
+
+    socket.on('joinroom', (chatId) => {
+        socket.join(chatId);
+        console.log('user joined room ', chatId);
+
+        const userInThisRoom = io.sockets.adapter.rooms.get(chatId).size;
+        console.log('userInThisRoom', userInThisRoom);
+    })
+
+    socket.on('leaveroom', (chatId) => {
+        socket.leave(chatId);
+        console.log('user left room ', chatId);
+    })
+
+
+    socket.on("typing", (room) => socket.in(room).emit("typing"));
+    socket.on("stop typing", (room) => socket.in(room).emit("stop typing"));
+
+    socket.on('disconnect', () => {
+        console.log('user disconnected ', socket.id);
+    });
+
+})
