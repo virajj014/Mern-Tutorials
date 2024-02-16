@@ -60,7 +60,7 @@ const page = () => {
 
       <div className={styles.formContainer}>
         <h1>Forgot Password</h1>
-        <TextField id="standard-basic" label="Email" variant="outlined" color="secondary"
+        <TextField id="standard-basic" label="Email" variant="outlined" color="warning"
           name='email'
           value={formData.email}
           onChange={handleInputChange}

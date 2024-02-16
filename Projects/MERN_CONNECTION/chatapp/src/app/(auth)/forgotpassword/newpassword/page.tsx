@@ -74,7 +74,7 @@ const page = () => {
             <BackButton backroute='/login' />
 
             <div className={styles.formContainer}>
-                <FormControl sx={{ m: 0 }} variant="outlined" color='secondary'>
+                <FormControl sx={{ m: 0 }} variant="outlined" color="warning">
                     <InputLabel htmlFor="outlined-adornment-password">New Password</InputLabel>
                     <OutlinedInput
                         id="outlined-adornment-password"
@@ -98,7 +98,7 @@ const page = () => {
                     />
                 </FormControl>
 
-                <FormControl sx={{ m: 0 }} variant="outlined" color='secondary'>
+                <FormControl sx={{ m: 0 }} variant="outlined" color="warning">
                     <InputLabel htmlFor="outlined-adornment-password">Confirm Password</InputLabel>
                     <OutlinedInput
                         id="outlined-adornment-password"
@@ -122,7 +122,7 @@ const page = () => {
                     />
                 </FormControl>
 
-                <FormControl sx={{ m: 0 }} variant="outlined" color='secondary'>
+                <FormControl sx={{ m: 0 }} variant="outlined" color="warning">
                     <InputLabel htmlFor="outlined-adornment-password">Otp</InputLabel>
                     <OutlinedInput
                         id="outlined-adornment-password"

@@ -77,7 +77,9 @@ const Navbar = () => {
   return (
     <div className={styles.nav}>
       <div className={styles.left}>
-        <Image src={logo} alt="logo" width={50} height={50} />
+        <Image src={logo} alt="logo" width={150} height={50}
+         quality={100}
+        />
 
       </div>
       <div className={styles.right}>
@@ -87,11 +89,11 @@ const Navbar = () => {
         }
         {
           auth.isAuth ?
-            <Button variant="contained" color="secondary"
+            <Button variant="contained" 
               onClick={handleLogout}
             >Logout</Button>
             :
-            <Button variant="contained" color="secondary"
+            <Button variant="contained" 
               onClick={() => router.push('/login')}
             >Login</Button>
         }

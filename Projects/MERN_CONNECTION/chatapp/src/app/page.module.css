@@ -1,0 +1,13 @@
+.homeout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.homeout h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--quaternary);
+    text-align: center;
+}

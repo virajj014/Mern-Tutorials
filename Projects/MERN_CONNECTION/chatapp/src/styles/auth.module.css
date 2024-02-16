@@ -7,7 +7,9 @@
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 5px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
+    margin: 10px;
     background-color: white;
 }
 
@@ -18,7 +20,12 @@
     justify-content: center;
     align-items: center;
     background: var(--quaternary);
+    overflow-y: auto; /* Enable vertical scrollbar */
 }
+
+
+
+
 
 .formContainer h1{
     font-size: 2rem;
@@ -72,3 +79,14 @@
     justify-content: space-between;
     gap: 0px;
 }
+
+
+.pickImageButton{
+    background-color: var(--quaternary);
+}
+
+.pickImageButton:hover{
+    background-color: var(--tertiary);
+}
+
+

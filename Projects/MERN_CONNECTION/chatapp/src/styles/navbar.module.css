@@ -10,3 +10,16 @@
     display: flex;
     gap: 20px;
 }
+
+.nav img{
+    width: auto;
+}
+
+.nav button{
+    background-color: #FFD51E;
+    color: #333;
+}
+
+.nav button:hover{
+    background-color: #ffd61e79;
+}

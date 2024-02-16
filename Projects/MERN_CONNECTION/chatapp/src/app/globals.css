@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,9 +6,31 @@
 }
 
 
-:root{
-    --primary:#F1EAFF;
+:root {
+    --primary: #F1EAFF;
     --secondary: #E5D4FF;
-    --tertiary: #DCBFFF;
-    --quaternary: #a032ff;
+    --tertiary: #ffd61e79;
+    --quaternary: #FFD51E;
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.maindiv::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.maindiv::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.maindiv::-webkit-scrollbar-thumb {
+    background: #FFD51E;
+}
+
+.maindiv::-webkit-scrollbar-thumb:hover {
+    background: #ffd61e79;
 }

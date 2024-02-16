@@ -119,13 +119,13 @@ const page = () => {
     <div className={styles.formOuter}>
       <div className={styles.formContainer}>
         <h1>Login</h1>
-        <TextField id="standard-basic" label="Email" variant="outlined" color="secondary"
+        <TextField id="standard-basic" label="Email" variant="outlined" color="warning"
           name="email"
           value={formData.email}
           onChange={handleInputChange}
         />
 
-        <FormControl sx={{ m: 0 }} variant="outlined" color='secondary'>
+        <FormControl sx={{ m: 0 }} variant="outlined" color="warning">
           <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"

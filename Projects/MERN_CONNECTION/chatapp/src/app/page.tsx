@@ -30,8 +30,8 @@ export default function Home() {
 
 
   return (
-    <div>
-      <h1>Home</h1>
+    <div className={styles.homeout}>
+      <h1>Subscribe to Coders Hub :) </h1>
     </div>
   )
 }

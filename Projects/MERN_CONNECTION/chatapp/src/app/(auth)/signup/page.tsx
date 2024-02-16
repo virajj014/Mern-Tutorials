@@ -11,6 +11,7 @@ import { useRouter } from 'next/navigation';
 import LoadingButton from '@mui/lab/LoadingButton';
 import SendIcon from '@mui/icons-material/Send';
 import BackButton from '@/components/BackButton';
+import { blue } from '@mui/material/colors';
 interface FormData {
   name: string,
   email: string,
@@ -120,7 +121,9 @@ const page = () => {
               imageFile ? URL.createObjectURL(imageFile) : ''
             }
           />
-          <Button color="secondary" variant="contained" component="label">
+          <Button
+           className={styles.pickImageButton}
+          variant="contained" component="label"color="warning" >
             Select Image
             <input type="file" hidden
               onChange={
@@ -136,8 +139,8 @@ const page = () => {
         <TextField
           id="name-input"
           label="Name"
+          color="warning"
           variant="outlined"
-          color="secondary"
           name="name"
           value={formData.name}
           onChange={handleInputChange}
@@ -146,8 +149,8 @@ const page = () => {
           <TextField
             id="email-input"
             label="Email"
+            color="warning"
             variant="outlined"
-            color="secondary"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
@@ -174,7 +177,7 @@ const page = () => {
           }
         </div>
 
-        <FormControl sx={{ m: 0 }} variant="outlined" color='secondary'>
+        <FormControl sx={{ m: 0 }} variant="outlined" color="warning" >
           <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
@@ -199,7 +202,7 @@ const page = () => {
         </FormControl>
 
 
-        <FormControl sx={{ m: 0 }} variant="outlined" color='secondary'>
+        <FormControl sx={{ m: 0 }} variant="outlined" color="warning">
           <InputLabel htmlFor="outlined-adornment-password">Otp</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
